@@ -1,13 +1,15 @@
+require('dotenv').config();
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 
 const app = express();
-const PORT = 5000; // or any free port you like
+const PORT = 5000;
 
 app.use(cors());
 
-// Example proxy route
+const API = process.env.API_KEY
+
 app.get("/api/data", async (req, res) => {
     try {
         const response = await axios.get(API);
