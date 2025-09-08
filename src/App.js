@@ -27,11 +27,10 @@ const App = () => {
   if (error) return <div>Error: {error.message}</div>
   if (!api || api.length === 0) return <div>No data available</div>
 
-  console.log(api)
-
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>PT MIS GPS KAPAL</h1>
+      <hr />
       {api.map(shipObject => <ShipData key={shipObject.VName} data={shipObject} />)}
     </div>
   )

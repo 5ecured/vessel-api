@@ -1,0 +1,27 @@
+table,
+th,
+td {
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+th {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 10px;
+    font-size: larger;
+}

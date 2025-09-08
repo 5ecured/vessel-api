@@ -32,7 +32,7 @@ const ShipData = ({ data }) => {
                     <tr>
                         <td>{Status}</td>
                         <td>{Speed}</td>
-                        <td>{formatted}</td>
+                        <td>{formatted} WIB</td>
                         <td>{Lat}</td>
                         <td>{Lon}</td>
                     </tr>
