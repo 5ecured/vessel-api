@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 
 const ShipData = ({ data }) => {
-    const { VName, Status, Speed, DateTime, Lat, Lon } = data
+    const { VName, Status, Speed, DateTime, Lat, Lon, Direct, Mileage } = data
 
     // 1. Convert to Date object
     const date = new Date(DateTime.replace(' ', 'T')) // 'T' makes it ISO-compatible
@@ -26,6 +26,8 @@ const ShipData = ({ data }) => {
                         <th>Status</th>
                         <th>Speed</th>
                         <th>Waktu</th>
+                        <th>Wind direction</th>
+                        <th>Odometer</th>
                         <th>Latitude</th>
                         <th>Longitude</th>
                     </tr>
@@ -33,6 +35,8 @@ const ShipData = ({ data }) => {
                         <td>{Status}</td>
                         <td>{Speed}</td>
                         <td>{formatted} WIB</td>
+                        <td>{Direct} degrees</td>
+                        <td>{Mileage} knots</td>
                         <td>{Lat}</td>
                         <td>{Lon}</td>
                     </tr>
