@@ -5,6 +5,9 @@ export default async function handler(req, res) {
     try {
         const url = `https://app1.muliatrack.com/wsmulins/Service.asmx/LastPosition?sTokenKey=${process.env.API_KEY}&UserID=${process.env.USER_ID}`;
 
+        console.log('Fetching URL:', url);           // 🔹 log full URL
+        console.log('Env API_KEY:', process.env.API_KEY); // 🔹 check API key
+
         const response = await axios.get(url);
 
         // Return the JSON back to the frontend
