@@ -27,7 +27,7 @@ const ShipData = ({ data }) => {
                         <th>Speed</th>
                         <th>Waktu</th>
                         <th>Wind direction</th>
-                        <th>Odometer</th>
+                        <th>Total distance</th>
                         <th>Latitude</th>
                         <th>Longitude</th>
                     </tr>
