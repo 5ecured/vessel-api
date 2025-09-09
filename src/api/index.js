@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const backendAPI = 'http://localhost:5000/api/data'
+const backendAPI = 'https://vessel-api-backend.onrender.com/api/data'
 
 export const fetchAPI = async () => {
     try {
