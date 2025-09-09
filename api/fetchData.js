@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export default async function handler(req, res) {
     try {
-        const url = `${process.env.API_KEY}`;
+        const url = `https://app1.muliatrack.com/wsmulins/Service.asmx/LastPosition?sTokenKey=${process.env.API_KEY}&UserID=${process.env.USER_ID}`;
 
         const response = await axios.get(url);
 
